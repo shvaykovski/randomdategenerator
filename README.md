@@ -6,6 +6,8 @@ This class generates random date from a range of dates. You can set any format f
 ```php
 <?php
 
+require 'randomdategenerator/randomdate.class.php';
+
 $randDate = new RandomDate('2016-01-01', '2016-06-01'); // Output e.g. 2016-04-04 21:36:29
 $randDate->setFormat('r'); 
 echo $randDate->getValue() . "<br/>"; // Output - Fri, 04 Mar 2016 21:36:29 +0200
